@@ -1,0 +1,199 @@
+# What Is This Guide?
+This guide is designed to help people with their general Arduboy needs. If you are an absolute beginner, this guide _should_ teach you everything you need to know to get started. :sunglasses: 
+
+----------
+
+# What Is The Arduboy?
+The Arduboy is a cool GameBoy-inspired, [Arduino](https://www.arduino.cc)-based game console. There are a few different models, but this guide will mostly cover the production model of the Arduboy. It is open-source, which means that most games and programs will be free. Best of all, you can even program your own games for it!
+
+----------
+
+
+# What Are The Differences Between Arduboy Models?
+
+
+<img src="//ardcomsat1.s3-us-west-2.amazonaws.com/original/2X/5/5684600af93c3d999bf3912ac52241bc021217bb.jpg" width="200" height="200">
+
+### Production Model
+
+The production model of the Arduboy is the base model. There have been several different Arduboy models, but if you purchase an Arduboy today, you'll receive the production model Arduboy.  (The Kickstarter-edition of the Arduboy is extremely similar, except for some build differences such as different-strength screws and corrected LED orientation.)
+
+**Size:** `SIZE MISSING`
+**Screen Size:** 1.3" backlit monochrome OLED (128px by 64px)
+**Buttons:** 4 directional, 1 action button, 1 back button, 1 power switch
+**Sound:** 2 Channel Piezo Electric Speaker
+**Flash Memory:** 32 KB
+**SRAM:** 2.5 KB
+**EEPROM:** 1 KB
+**Clock Speed:** 16 MHz
+**Processor:** ATmega32u4
+**Ports:** USB Micro 2.0 with HID profile
+**LED:** 6 built-in LED's
+**Battery:** 8+ hour & rechargeable (180 mAh thin-film lithium polymer)
+**Colors:** White, Blue, Red, Green, Yellow, Gold
+
+To purchase an Arduboy, [be sure to visit the Arduboy Store](https://www.arduboy.com/store/products/arduboy). All purchases made will be shipped as soon as possible.
+
+
+----------
+
+<img src="//ardcomsat1.s3-us-west-2.amazonaws.com/original/2X/8/8f9a0e534afc246c8d8f030a18e6532aab9d1fd5.png" width="200">
+### Dev Kit Model
+Before the production model was made, an early version of the Arduboy was created for developers to get a head-start on creating games. This model is no longer available for purchase.
+
+Major differences include the battery being replaceable instead of rechargeable, major cosmetic differences, and the lack of a metal & polycarbonate housing. Also note that games created specifically for this device are not always compatible with any other model.
+
+----------
+
+
+<img src="//ardcomsat1.s3-us-west-2.amazonaws.com/original/2X/a/af032c5e97faf6c58528b66a8d480f8f8d7b1c63.jpg" width ="200">
+
+### Tetris® MicroCard
+The Arduboy team has been working hard to develop a customized hardware device that delivers an amazing and officially licensed Tetris® experience! Besides the obvious difference in button and screen layout, this version will retain most other hardware specs of the production model Arduboy.
+
+This model is [available now for purchase](https://www.arduboy.com/store/products/tetris-microcard), but has yet to receive an official release date.
+
+----------
+
+
+# What's The Easiest Way To Install Games?
+
+`IMAGE MISSING`
+
+The easiest way to install a game onto your Arduboy is to use the [Arduboy Manager](http://www.crait.net/arduboy/) that I created. This program was designed specifically for people who do not know how to code. Simply [download and install]( http://www.crait.net/arduboy/?download) the program based on which operating system you are currently running.
+
+`IMAGE MISSING`
+
+Once you have  the program on your computer, simply run it and attach your Arduboy with a USB cable. The Arduboy Manager will automatically connect to my online repository and show you which games are available to install. Simply select the game you want to play and click **Transfer**. The game should be automatically transferred and you're good to go! There are several more features of the Arduboy Manager, but if all you want to do is play games, then you're set!
+
+ * To learn more about the Arduboy Manager, check out the Arduboy Manager webpage: http://www.crait.net/arduboy/
+ * If you have a game you want me to include in the repository, send me a message and I'll add it!
+
+----------
+
+# How Do I Install Code I Found?
+Part of the appeal of the Arduboy is that you can write your own games and share them with others. If you find some code for an Arduboy game and want to install it, you're going to have to do a few things:
+
+ 1. [Install the Arduino IDE](https://www.arduino.cc/en/Main/Software), _which is the software you code your game with_
+ 2. Import the Arduboy Library, _which tells the software how to transform your code into an Arduboy game_
+ 3. Compile the code you have into a game for the Arduboy
+ 4. Transfer that file to the Arduboy
+
+These are very straight-forward steps for experienced developers, but don't worry if you don't know how to do this! @bateske wrote a [Kickstart Quick Start Guide](http://community.arduboy.com/t/kickstarter-quick-start-guide/725) to help guide you through this process.
+
+----------
+
+# What If I Get Errors While Installing?
+
+If you get any errors when installing games from the Arduino IDE, there can be various reasons. Some of the most common reasons are:
+
+ 1. The current program you have is blocking it due to a glitch. This is common with some games, so if you run into this problem follow this simple trick to get your code working again.
+ 2. If your program causes your Arduboy to only show a black screen, then it may be bricked. To fix this problem, [check out this thread to reset the bootloader](http://community.arduboy.com/t/how-to-reset-arduboy-if-its-bricked/807).
+ 3. You are trying to compile a game made for a a dev kit unit for your production model Arduboy. Unfortunately, this is not something that can be quickly switched. Try posting in the thread where you found the code to ask the author if they have any help. If there is a tutorial created for this process, I'll incorporate it into this guide.
+ 4. You did not install the latest library or you installed it incorrectly. Check the [quick start guide](http://community.arduboy.com/t/kickstarter-quick-start-guide/725) again to make sure you followed the steps correctly.
+ 5. Maybe your code just happens to be incorrect. It's cool, though! We're here to help! Make a post [in the development section of the forum](http://community.arduboy.com/c/arduboy/development) and we'll see if we can help you out.
+
+----------
+
+
+# Where Can I Find More Games & Code?
+
+Below is a list of games from this site and their release threads. It's the first place I look for code and games.
+
+[details=CLICK HERE TO VIEW LIST]
+
+**akkera102** 	-	[Tiny Depth](http://community.arduboy.com/t/tiny-depth-taste-of-game-watch/677)
+**akkera102**	-			[Tiny 2048](http://community.arduboy.com/t/tiny-2048-smooth-moving/746)
+**akkera102**	-				[Tiny Asteroids](http://community.arduboy.com/t/tiny-asteroids-zero-gravity/993)
+**akkera102**		-			[Tiny NS-Tower](http://community.arduboy.com/t/tiny-ns-tower-jump-and-scroll/881)
+**akkera102**		-			[Tiny Sokoban](http://community.arduboy.com/t/tiny-sokoban-includes-52-levels/921)
+**akkera102**		-			[TOYOSHIKI Tiny Basic](http://community.arduboy.com/t/toyoshiki-tiny-basic-interpreter/1478)
+**Alberto**		-				[CrazyKart](http://community.arduboy.com/t/crazykart-my-first-game/856)
+**arduboyfr** - [ArduSnake](http://community.arduboy.com/t/ardusnake-a-snake-game-i-made-for-the-french-magazine-programmez/1904/1)
+**Atomic** 	-			[Atomic Puzzle Pack](http://community.arduboy.com/t/atomic-puzzle-pack-beta-version/459)
+**bateske**	-				[Cascade Path: Wagon Train](http://community.arduboy.com/t/cascade-path-wagon-train/1258)
+**bateske**	-				[Squario: The Ultimate Adventure](http://community.arduboy.com/t/squario-the-ultimate-adventure/1257)
+**blockbird**	-				[Wire Screensaver](http://community.arduboy.com/t/wire-screensaver-my-first-very-tiny-arduboy-program-d/384)
+**Botisaurus**	-			[Battleships](http://community.arduboy.com/t/battleships-for-arduboy/1480)
+**Brian**	-				[Crates 3D](http://community.arduboy.com/t/game-testing-crates-3d/1491)
+**Brian**	-				[Mazogs](http://community.arduboy.com/t/mazogs-a-port-of-the-zx81-maze-adventure-game/676)
+**ccaroon**	-				[Sketch-A-Sketch](http://community.arduboy.com/t/sketch-a-sketch-simple-drawing-app/1495)
+**Dragula96**	-				[Box Stacker](http://community.arduboy.com/t/box-stacker-challenge-game/178)
+**Dragula96**	-				[Chicken Cross](http://community.arduboy.com/t/chicken-cross-my-first-arduboy-game-video-github-inside/134)
+**Dragula96**	-				[Snakeling](http://community.arduboy.com/t/snakeling-a-snake-clone/150)
+**fanboat**	-				[Fanboat](http://community.arduboy.com/t/fanboat-dodge-the-gators/1309)
+**flaki**	-					[Chrome Dino](http://community.arduboy.com/t/chrome-dino-offline-side-scroller/480)
+**Frrout**	-				[Ardusweeper](http://community.arduboy.com/t/ardusweeper-tiny-minesweeper/1029)
+**fuopy**	-				[Glove](http://community.arduboy.com/t/glove-a-lighter-softer-cozier-gauntlet/214)
+**fuopy**	-				[Gamepad](http://community.arduboy.com/t/arduboy-gamepad-map-buttons-to-keys/936)
+**Gaveno**	-				[RoboDodge](http://community.arduboy.com/t/robododge-dodge-the-rockets/427)
+**gnargle**	-				[Stellar Impact](http://community.arduboy.com/t/stellar-impact-a-space-shoot-em-up/994)
+**gooberdlx** - [Arduslide](http://community.arduboy.com/t/arduslide-simple-tile-slide-game/1758)
+**giangregorioc**	-			[Humanity Revenge](http://community.arduboy.com/t/humanity-revenge-a-simple-shoot-em-up/1475)
+**Hugus** - [SnakeArduboy](http://community.arduboy.com/t/official-game-list-for-the-arduboy-clipboard/783/26)
+**Jezzamon**	-				[TeenyTank](http://community.arduboy.com/t/multiplayer-game-teenytank/585)
+**Jezzamon** - [MicroCheckers](http://community.arduboy.com/t/microcheckers-multiplayer-checkers/1763)
+**kernel**	-				[ArduSketch](http://community.arduboy.com/t/ardusketch-an-arduboy-paint-program/501)
+**KurayamiSenpai** - [Bounce](http://community.arduboy.com/t/bounce-multiplayer-pong-game/1747)
+**MLXXXp**	-				[Arduboy gets a Life](http://community.arduboy.com/t/arduboy-gets-a-life-conways-game-of-life/578)
+**MLXXXp**	-				[EEPROM Eraser](http://community.arduboy.com/t/how-do-you-delete-saved-files/1447)
+**MLXXXp**	-				[Flappy Ball](http://community.arduboy.com/t/flappy-ball-aka-floaty-ball-game/1011)
+**Mre64**	-				[Battle for Zuthsrah](http://community.arduboy.com/t/battle-for-zuthsrah/713)
+**neilsunw** - [Sudoku-NBP](http://community.arduboy.com/t/sudoku-nbp-arduboy-game/1713)
+**olikraus** - [Little Rook Chess](http://community.arduboy.com/t/little-rook-chess/1871)
+**pixelplatforms** - [SkateArdDie!](http://community.arduboy.com/t/new-game-skatearddie/1918)
+**PolygonAndPixel**	-		[Space Fighter](http://community.arduboy.com/t/space-fighter-a-space-shooter/1173)
+**Roo**	-					[Flappy Halloween](http://community.arduboy.com/t/flappy-halloween-simple-side-scroller/561)
+**scootmatt**	-				[Braindu-Train](http://community.arduboy.com/t/brain-training-on-the-arduboy/1571)
+**Seth**	-					[Ardu-man](http://community.arduboy.com/t/ardu-man-inspired-by-pac-man/1550)
+**shdwwzrd**	-				[Rayne the Rogue](http://community.arduboy.com/t/rayne-the-rogue/1020)
+**streetalchemist** - [Space Knife](http://community.arduboy.com/t/space-knife-first-arduboy-game-by-streetalchemist/1821)
+**Team ARG** - [Begemmed](http://community.arduboy.com/t/begemmed-fourth-team-a-r-g-game/515)
+**Team ARG** - [Blob Attack](http://community.arduboy.com/t/blob-attack-first-native-team-a-r-g-game/283)
+**Team ARG** - [Dice of Fate](http://community.arduboy.com/t/dice-of-fate-seventh-team-a-r-g-game/1101)
+**Team ARG** - [Epic Crates of Mass Destruction](http://community.arduboy.com/t/epic-crates-of-mass-destruction-fifth-team-a-r-g-game/712)
+**Team ARG** - [Shadow Runner](http://community.arduboy.com/t/shadow-runner-first-conversion-of-a-team-a-r-g-game/239)
+**Team ARG** - [Trolly Fish](http://community.arduboy.com/t/trolly-fish-sixth-team-a-r-g-game/929)
+**Team ARG** - [Reverse Mermaid Hockey](http://community.arduboy.com/t/reverse-mermaid-hockey-third-team-a-r-g-game/355)
+**Team ARG** - [Virus LQP-79](http://community.arduboy.com/t/virus-lqp-79-eighth-team-a-r-g-game/1646)
+**veritazz** - [Fatsche](http://community.arduboy.com/t/fatsche-defend-the-door/1714)
+**w3woody**	-				[Blocks](http://community.arduboy.com/t/blocks-move-boxes-around-puzzle-game/1233)
+**Wenceslao_Villanueva**	-	[Pang](http://community.arduboy.com/t/pang-a-pong-like/419)
+**Wenceslao_Villanueva** - [Star Honor](http://community.arduboy.com/t/star-honor-a-space-roguelike-adventure/1936)
+**Yomogimaru**	-			[i4arduboy](http://community.arduboy.com/t/i4arduboy-a-shmup-with-long-range-sniping/569)
+**Yoshi**	-				[NumberMind](http://community.arduboy.com/t/numbermind-a-master-mind-type-game-with-numbers/1516)
+
+
+[/details]
+
+There are several places to look for more games!
+
+ * We have [an official games list](http://community.arduboy.com/t/official-game-list-for-the-arduboy-clipboard/783) that you can check out.
+ * [CodeBender](https://codebender.cc/user/ArduboyGames) also supports sharing code if you happen to use it. I've never used it, so I can't say how active it is.
+ * You can also check Twitter. There's a lot of people on there who are making cool games for themselves that happen to show off their works with the #Arduboy hashtag. You can always ask them to share their games or code with you!
+
+While you're at it, be sure to follow the official Arduboy Twitter page [@ArduboyTweets](https://twitter.com/arduboytweets)! You can also follow me here: [@crait](https://twitter.com/crait) :stuck_out_tongue: 
+
+----------
+
+
+# How Do I Get Started Programming For The Arduboy?
+
+Programming for the Arduboy is fun! It was designed to be easy, too. Currently, we are working on getting some step-by-step guides created for programming specifically with the Arduboy. You can always check the [Guides section](http://community.arduboy.com/c/arduboy/guides) to see what other people create.
+
+To summarize, though, you'll need to:
+ 1. [Install the Arduino IDE](https://www.arduino.cc/en/Main/Software), _which is the software you code your game with_
+ 2. Import the Arduboy Library, _which tells the software how to transform your code into an Arduboy game_
+ 3. Create a new sketch, _which is what we call the file that has all the code in it_
+ 4. Start writing your game
+ 5. Transfer that file to the Arduboy
+
+Don't worry too much about specifics if you're new. Concepts in the C language that Arduboy uses are almost universal among programming languages, which means you can learn the basics on many different websites. For now, I'd suggest looking into [this introduction lesson](https://cvw.cac.cornell.edu/Cintro/default) by _Cornell Center for Advanced Computing_.
+
+----------
+
+# Did I Miss Anything?
+ * There are some more great guides in the [Guides section of the forum](http://community.arduboy.com/c/arduboy/guides), so if there's anything more specific you are wondering about, be sure to check there!
+ * If you have any questions, make a post in the [Help and Information section of the forum](http://community.arduboy.com/c/arduboy/help). We'll try to help you out as soon as we can.
+ * Need help programming or just want to show off? We also have a [Development section to check out](http://community.arduboy.com/c/arduboy/development)!
+ * Do you still have questions? Feel free to send me a private message and I'll try to help you out!

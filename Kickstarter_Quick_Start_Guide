@@ -1,0 +1,175 @@
+http://community.arduboy.com/t/kickstarter-quick-start-guide/725
+
+__________________________________________________________
+
+Welcome to your brand-new Arduboy!
+
+
+This guide will introduce you to the features of the Arduboy and get you started with software you need to upload new games and develop your own software.
+
+There are two versions of the Arduboy:
+
+The "production" Arduboy which was developed as result of a Kickstarter campaign153. This is sometimes referred to as the Arduboy 1.0
+The Developer Kit or DevKit which is an earlier prototype. This was also available as a Kickstarter reward and also previously sold on Tindie71.
+This guide is applicable to both versions.
+
+Codebender1.9k
+
+Would you like to start playing now and come back to this guide later? If so, click yes1.9k. This link1.9k will take you to the official Arduboy Codebender account where you can view the source and upload games from our account to your Arduboy. After you've created an account173 you can create and save your own games on Codebender and easily share them with everyone using a URL :smile:
+
+What is Codebender?
+
+Codebender361 is an online Integrated Development Environment or IDE for short. Using Codebender it is possible to create, share and upload you programs for the Arduboy online.
+
+Introduction
+
+The tiny square black chip in the bottom right corner of the production Arduboy, or near the center of the DevKit, is called a microcontroller and it is the brains of the device. This tiny 8-bit computer contains all of the instructions, graphics, and sound to produce the game played on the device. We can reprogram the Arduboy, and change the game on it, using a micro-USB cable and some software called Arduino.
+
+Step 1: Download and Install Arduino Software
+3.1k
+
+Click here to go to the Arduino Download Page3.1k
+
+Use the links on the Arduino website to download the install file. Run the installer executable and follow the instructions to install the Arduino software onto your computer.
+
+The Arduino IDE is an Integrated Development Environment (IDE). This means that you can create software for Arduino compatible devices within one piece of software. The same program that you use to edit the code will be used for compiling (turning source code into machine language) and uploading to the device.
+
+In addition to codebender, we are working on some future solutions that will allow you to upload software without Arduino. Stay Tuned!
+
+Step 2: Install the Arduboy Library and Board Support
+
+
+Install the Arduboy Library
+
+The Arduboy Library provides access to all of the features and functions of the Arduboy and is available through the Arduino IDE's Library Manager.
+
+To add the Arduboy Library to the Arduino IDE, from the Arduino IDE's menu bar select the Library Manager found under the Sketch menu.
+
+Sketch > Include Library > Manage Libraries...
+
+This will open the Library Manager. Search for arduboy, or find the Arduboy Library in the Type:Contributed Topic:Other category. After selecting the Arduboy Library from the list select the most current version of the library and press install.
+
+More information on installing and managing Arduino Libraries can be found here484.
+
+The Arduboy library is software that has been written specifically for the Arduboy that allows you to easily draw pictures, play music, read input buttons and much more. It has been created with the help of the community, many people have contributed to make the framework more efficient and user friendly!
+
+An archive (.zip) of the most up to date stable version of the Arduboy Library can be found here1.0k but if you installed the library as instructed above, you don't need this.
+
+Note for sketch developers: The code for the Arduboy Library is maintained in a repository on GitHub42. The master branch of this repository contains a version which may be under development and could be unstable, or incompatible with the current stable release. Don't use the code found on the master branch for developing sketches. Use the version installed as instructed above, or the stable branch on GitHub22.
+
+Install Support for the Arduboy and DevKit (optional)
+
+By installing support for the Arduboy and DevKit in the IDE you will be able to select Arduboy or Arduboy DevKit as the device (board) that you are using.
+
+If you have a production Arduboy, this step is optional. You can just select the built in device Arduino Leonardo, but it's probably easier to remember Arduboy than Arduino Leonardo.
+
+If you have a DevKit, it is recommended that you install this support. Otherwise, you will have to edit some lines in the Arduboy library which you previously installed, in order to make many of the programs work properly.
+
+Here's how to add the boards:
+
+In the Arduino IDE select File > Preferences. In the Settings tab there will be a field titled Additional Boards Manager URLs:
+Put the following text in this field:
+https://arduboy.github.io/board-support/package_arduboy_index.json
+prefs.png730x670 24 KB
+If the field already has had other URL(s) added, you can click on the edit icon  at the end of the field to allow you to add the new URL on a separate line.
+
+Click on OK to save the preferences.
+
+Select Tools > Board: > Boards Manager...
+
+select_bm.png630x665 26.7 KB
+In the search field at the top right of the Boards Manager window, enter arduboy.
+
+Click on the box containing: Arduboy by Arduboy Team
+and then click on the Install button that appears at the bottom right of the box.
+
+install.png800x450 9.77 KB
+The word INSTALLED should appear in the box.
+
+Close the Boards Manager window.
+
+There should now be items Arduboy and Arduboy DevKit available for selection in the menu that you get using Tools > Board:
+
+Step 3: Try Opening and Uploading an Example Sketch
+
+
+In the Arduino IDE, a game or other program is called a sketch. A sketch is opened in the IDE and then uploaded into your Arduboy so you can run it. It's a good idea to use one of the example sketches included with the Arduboy library as the first sketch that you upload, in order to verify that you have followed the previous steps correctly and everything is working.
+
+The example sketches will have been tested to work with the currently installed Arduboy library, so will eliminate one possible source of problems.
+
+Open an Example Sketch
+
+Select from the IDE menus:
+File > Examples > Arduboy
+and click on one of the examples offered.
+
+This should open the chosen sketch in a new IDE window.
+
+Connect your Arduboy and Set the Board Type and Port
+
+The first time you plug the Arduboy into your Windows computer after installing the Arduino software you will be notified that a new USB device was detected. The Arduboy will appear to your computer as an Arduino Leonardo.
+
+Set the type of Arduboy that you have by selecting from the IDE menus:
+Tools > Board:
+From the offered devices, choose Arduboy (or Arduino Leonardo if you didn't install the board support in Step 2 above) if you have a production Arduboy.
+If you have a DevKit, choose Arduboy DevKit.
+
+Set the port that your Arduboy is connected to by selecting from the IDE menus:
+Tools > Port
+The correct port to choose will likely be identified as an Arduino Leonardo. This is fine. The Arduboy uses the Arduino Leonardo bootloader so is detected as such.
+
+
+
+The board type and port that is currently selected can be seen on the status bar at the bottom of the IDE window. Always check that they are correct before uploading a sketch to your Arduboy.
+
+Upload the sketch
+
+To upload the opened sketch to your Arduboy, select from the IDE menus:
+Sketch > Upload
+or just click on the Upload button  near the top left of the IDE.
+
+
+
+If all goes well, the sketch will compile without errors and then be uploaded to your Arduboy. After the upload completes, the sketch will run immediately. Hurray! :thumbsup:
+
+Just a note: If at any time you wish to check if the opened sketch will compile properly but not have it uploaded to your Arduboy (even if the Arduboy isn't connected), you can click on the Verify button  or select from the IDE menus:
+Sketch > Verify/Compile
+
+Another note: Once you become familiar with using the Arduino IDE, you may wish to use keyboard shortcuts to perform many operations, instead of using menu selections or mouse clicks. If a shortcut is available, it will be shown at the right of the menu item for the operation that it will perform.
+
+Step 4: Install more Games and other Sketches and Start to Play!
+
+
+Click Here to View the "Official" Game List
+
+Click Here to Visit the Games Category
+
+Adding games and other sketches to the IDE isn't very difficult, once you get the hang of it.
+
+        :arrow_down:
+:arrow_right: Use the detailed guide on how to install sketches, which can be viewed by clicking here. :arrow_left:
+        :arrow_up:
+
+Installed sketches that aren't library examples can be opened by selecting from the IDE menus:
+File > Sketchbook
+You can also open any installed sketch by clicking on the Open button  near the top left of the IDE.
+
+We are currently working on a web interface for a more simple one-click upload. The goal is for users to navigate to arduboy.com and be able to immediately play new games. An offline hex uploader is also in development.
+
+Browse around in the community for games other users have posted! The best thing about the Arduboy community is the ability to communicate directly with the developers! Join in on the fun!
+
+If at some point your Arduboy appears to be dead, or you're having trouble uploading a new sketch to it, don't panic :anguished:. You may just have to follow a reset procedure.
+Click here for production Arduboy reset instructions
+Click here for DevKit reset instructions
+
+If you run into problems at this stage there are guides elsewhere on the community site that can help out.
+
+712
+
+Click Here to Visit Team A.R.G.712
+
+Team A.R.G. is a game development studio that already has created some awesome content for the Arduboy. The game that came preinstalled on the Kickstarter production Arduboys is by Team A.R.G. And, we are partnering together to deliver more soon!
+
+
+
+And there you have it! You're ready! If you are just learning about Arduino for the first time this link is probably as good a place as any to get started.589 Get curious! Start Google searching and watching other peoples tutorials! Participate in this forum! Before long you will be posting content of your own! Start to Play!
